@@ -25,7 +25,11 @@ function validateForm() {
       alert("Email must be filled out!");
       return false;
     }
-
+    if(!validateEmail(formInput[2]))
+    {
+      alert("Invalid email!");
+      return false;
+    }
     formInput[3]=document.forms["myForm"]["num"].value;
     if (formInput[3] == "") {
       alert("Contact Number must be filled out!");
@@ -45,6 +49,12 @@ function validateForm() {
     
     alert("Form Submitted Successfully!");
   }
+
+  function validateEmail(email){
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.mail.value))
+      return true;
+    return false;
+}
 
   function validateDate(dateString){     
     if(dateString.match(/[a-z]/)!=null ||  dateString.match(/[A-Z]/)!=null)
