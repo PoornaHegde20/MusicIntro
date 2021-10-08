@@ -65,7 +65,7 @@ function validateForm() {
     if(dateString.match(dateformat)){      
         let operator = dateString.split('/');      
       
-        // Extract the string into month, date and year      
+        //string into month, date and year      
         let datepart = [];      
         if (operator.length>1){      
             datepart = dateString.split('/');      
@@ -74,11 +74,11 @@ function validateForm() {
         let month = parseInt(datepart[1]);      
         let year = parseInt(datepart[2]);      
               
-        // Create list of days of a month      
+        //list of days of a month      
         let ListofDays = [31,28,31,30,31,30,31,31,30,31,30,31];      
         if (month==1 || (month>2 && month<13)){      
             if (day>ListofDays[month-1]){      
-                ///This check is for Confirming that the date is not out of its range      
+                ///This check is for Confirming that the date is not out ofrange      
                 return false;      
             }      
         }else if (month==2){      
