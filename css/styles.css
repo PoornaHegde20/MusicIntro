@@ -2,7 +2,6 @@
 body{
     font-size: 2vw;
     font-family: baskerville;
-    /* text-shadow: 3px 3px 3px #ababab; */
     width: 100%;
     height: 100%;
     background-color: rgb(82, 36, 36);
@@ -11,6 +10,7 @@ body{
     border: 0ch;
     overflow-y: scroll;
     overflow-x: hidden;
+    margin-right: 5%;
 }
 * {
     box-sizing: border-box;
@@ -26,7 +26,7 @@ header{
     width:100%;
     height: auto;
     margin: 0%;
-    text-align: right;
+    /* text-align: right; */
     color: rgb(207, 98, 189);
 }
 footer{
@@ -38,9 +38,19 @@ footer{
     margin: 0px-(10%);
     margin-left: 0px (-20%);
     padding: 0px 10%; */
-    height: 10%;
+    padding: 0%;
     margin: 0%;
-    margin-bottom: -5%;
+    /* margin-bottom: -(0.05)%; */
+    bottom: 0%;
+    width: 100%;
+    padding-bottom: 0.3%;
+}
+
+@media only screen and (max-width: 990px){
+    footer{
+        padding: auto;
+        position: fixed;
+    }
 }
 /* footer {
     text-align: center; 
@@ -54,6 +64,7 @@ footer{
     height: auto;
     margin-right: 5%;
     margin-top: 0%;
+    padding: 5%;
 }
 a{
     color: rgb(207, 98, 189);
