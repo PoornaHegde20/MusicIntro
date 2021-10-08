@@ -17,7 +17,8 @@
 </head>
 <body>
     <header>
-        <p id="accName"></p>
+        <a href="https://www.spotify.com/in-en/" title="Spotify" target="blank"><img src="img/spotify.png" alt="Spotify icon"></a>
+    
     </header>
     <div class="container-fluid">
         <h2>Tell Us About Yourself!!</h2>
@@ -28,18 +29,27 @@
                     <label for="fname">Name:</label><br>
                     <input type="text" id="fname" name="fname" placeholder="Enter your name" maxlength="50"><br><br>
                     <label for="name">Date of Birth:</label><br>
-                    <input type="date" id="DOB" name="DOB" placeholder="DD-MM-YYYY"><br><br>
+                    <input type="text" id="DOB" name="DOB" placeholder="DD/MM/YYYY"><br><br>
                     <label for="name">Email:</label><br>
                     <input type="email" id="mail" name="mail" placeholder="Enter your email" maxlength="70"><br><br>
                     <label for="name">Contact Number:</label><br>
                     <input type="text" id="num" name=" num" placeholder="Enter your contact number"><br><br>
                     <label for="name">Genre of music you like:</label><br>
-                    <input type="text" id="music" name="music" placeholder="Enter genre here" maxlength="20"><br><br>
+                    <select id="music" name="music" placeholder="Enter genre here" maxlength="20">
+                        <option value="rock">Rock</option>
+                        <option value="pop">Pop</option>
+                        <option value="rap">Rap</option>
+                        <option value="country">Country</option>
+                        <option value="hiphop">Hip-Hop</option>
+                        <option value="classical">Classical</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
                     <input type="submit" id="sub" name="sub" value="Submit" onclick='submitFn()'>
                 </form>   
             </div>
             <div class="col-md-6">
-                <img src="img/music.jpg" alt="Music!">
+                <img src="img/music3.jpeg" alt="Music picture of a man and his dog!" id="musicpic">
             </div>
         </div>
     </div>
@@ -51,7 +61,8 @@
     <footer>
         <p>
             Created by: Poorna Hegde <br>
-            <a href="mailto:poornahegde.201it240@nitk.edu.in" id="mail">Click here to mail me!</a>
+            <a href="mailto:poornahegde.201it240@nitk.edu.in" id="mail" title="Redirects to your mail" target="blank">Click here to mail me!</a>
+            <br>Image credits: <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" target="blank">Pixel perfect</a> 
         </p>
     </footer>
 </body>

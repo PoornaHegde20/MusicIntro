@@ -20,12 +20,14 @@ body{
     margin-bottom: 0%;
 }
 header{
-    /* display: block; */
+    display: block; 
     /* position:fixed; */
     background-color: rgb(0, 0, 0);
     width:100%;
     height: auto;
     margin: 0%;
+    text-align: right;
+    color: rgb(207, 98, 189);
 }
 footer{
     display: block;
@@ -46,11 +48,12 @@ footer{
     /* background-color: DarkSalmon;
     color: white; 
   } */
-img{
+#musicpic{
     float: right;
     max-width: 100%;
     height: auto;
     margin-right: 5%;
+    margin-top: 0%;
 }
 a{
     color: rgb(207, 98, 189);
