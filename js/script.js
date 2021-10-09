@@ -59,10 +59,10 @@ function validateForm() {
   function validateDate(dateString){     
     if(dateString.match(/[a-z]/)!=null ||  dateString.match(/[A-Z]/)!=null)
       return false;
-    let dateformat = /^(0?[1-9]|1[0-2])[\/](0?[1-9]|[1-2][0-9]|3[01])[\/]\d{4}$/;      
+       
           
     // Match the date format through regular expression      
-    if(dateString.match(dateformat)){      
+        
         let operator = dateString.split('/');      
       
         //string into month, date and year      
@@ -102,8 +102,6 @@ function validateForm() {
           if(month>10)
             return false;
         }     
-    }else{         
-        return false;      
-    }      
+      
     return true;      
 }   
