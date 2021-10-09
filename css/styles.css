@@ -57,11 +57,12 @@ footer{
 a{
     color: rgb(207, 98, 189);
 }
-a:hover{
-    color: rgb(226, 43, 43);
-}
+
 a:visited{
     color: blueviolet;
+}
+a:hover{
+    color: rgb(226, 43, 43);
 }
 .col-md-5{
     margin: 1%;
